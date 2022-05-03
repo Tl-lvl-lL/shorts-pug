@@ -1,25 +1,30 @@
 {
-  "name": "pug-examples",
-  "version": "1.0.0",
-  "description": "Examples to add to anki",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Tl-lvl-lL/shorts-pug.git"
-  },
-  "keywords": [
-    "sass",
-    "html",
-    "css",
-    "javascript"
-  ],
-  "author": "Mariano",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Tl-lvl-lL/shorts-pug/issues"
-  },
-  "homepage": "https://github.com/Tl-lvl-lL/shorts-pug#readme"
+    "name": "pug-examples",
+    "version": "1.0.0",
+    "description": "Examples to add to anki",
+    "main": "index.html",
+    "scripts": {
+        "pug": "pug --watch src/index.pug --pretty --out public/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Tl-lvl-lL/shorts-pug.git"
+    },
+    "keywords": [
+        "sass",
+        "html",
+        "css",
+        "javascript",
+        "pug"
+    ],
+    "author": "Mariano",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Tl-lvl-lL/shorts-pug/issues"
+    },
+    "homepage": "https://github.com/Tl-lvl-lL/shorts-pug#readme",
+    "devDependencies": {
+        "pug": "^3.0.2",
+        "pug-cli": "^1.0.0-alpha6"
+    }
 }

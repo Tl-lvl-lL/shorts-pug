@@ -1,0 +1,42 @@
+//- -var counter = 0 
+mixin menu_list(list_items,media_type="txt")
+    section 
+        nav
+            ul
+                each i in list_items
+                    li 
+                        a(href="/") 
+                            if media_type == "txt" 
+                                p= i
+                            else if media_type == "img" 
+                                img(src="https://dummyimage.com/50x20/918891/0011ff.png&text=Img"+i, alt="nothing")
+                            else 
+                                p NOT PATRONS
+-var authenticated = false
+-var list=["BLOG","PRODUCT","CONTACT"]
+-var list_enterprise_margins=["Privacidad de datos","Terminos y condiciones","Politica y Regulacion"]
+//- -var logos=[]
+doctype html
+html(lang="en")
+     
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Remeber PUG
+    body 
+        header 
+            a(href="/") LOGO 
+            nav 
+                ul
+                    each item in list 
+                        li=item 
+            if  !authenticated
+                button Login
+        
+        footer 
+            +menu_list(list)
+            +menu_list(list_enterprise_margins)
+            +menu_list([1,2,3],"img")
+            +menu_list([])
+    
