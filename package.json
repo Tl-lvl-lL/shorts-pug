@@ -1,0 +1,25 @@
+{
+  "name": "pug-examples",
+  "version": "1.0.0",
+  "description": "Examples to add to anki",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tl-lvl-lL/shorts-pug.git"
+  },
+  "keywords": [
+    "sass",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Mariano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tl-lvl-lL/shorts-pug/issues"
+  },
+  "homepage": "https://github.com/Tl-lvl-lL/shorts-pug#readme"
+}
